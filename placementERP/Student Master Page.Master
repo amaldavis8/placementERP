@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student Master Page.master.cs" Inherits="myERP.Student_Master_Page" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="my%20style/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Student</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="my%20style/plugins/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="my%20style/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <form id="form1" runat="server">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11"></div>
+            <div class="col-1">
+                <button type="button" class="btn btn-outline-dark">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row bg-info">
+            <div class="col-4">
+                <img src="images/CHRIST%20COLLEGE%20BLUE%20LOGO.jpg" class="rounded float-left img-thumbnail" />
+            </div>
+        </div>
+    </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+
+</html>
