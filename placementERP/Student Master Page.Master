@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student Master Page.master.cs" Inherits="myERP.Student_Master_Page" %>
 
 <!DOCTYPE html>
-
+<!-- comment by Simon -->
 <html>
 
 <head runat="server">
