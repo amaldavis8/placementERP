@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="my%20style/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
+    <!--Amal -->
     <title>Login</title>
 </head>
 <body>
