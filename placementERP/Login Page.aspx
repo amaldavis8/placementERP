@@ -14,7 +14,7 @@
     <title>Login</title>
 </head>
 <body>
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) cmmd added -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) cmmd added. -->
     <script src="my%20style/plugins/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="my%20style/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
