@@ -196,71 +196,71 @@
                             </div>
                             <div class="tab-pane fade" id="v-pills-academics" role="tabpanel" aria-labelledby="v-pills-academics-tab">
                                 <div class="card">
-                                    <div class="card-body">
+                                <div class="card-body">
                                 <div class="row py-3">
-                                    <div class="col">
+                                    <div class="col-3">
                                          SSLC Marks Percentage: 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="sslc" runat="server"></asp:TextBox>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                          HSE Marks Percentage: 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="hse" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
 
                                 <div class="row py-3">
-                                    <div class="col">
+                                    <div class="col-3">
                                          Study Gap: 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="studyGap" runat="server"></asp:TextBox>
                                     </div>
-                                    <div class="col"></div>
-                                    <div class="col"></div>
+                                    <div class="col-3"></div>
+                                    <div class="col-3"></div>
                                 </div>
 
                                 <div class="row py-3">
-                                    <div class="col">
+                                    <div class="col-3">
                                          B.Tech Current CGPA: 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="cgpa" runat="server"></asp:TextBox>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                          B.Tech Percentage: 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="btechPer" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
                         
                                 <div class="row py-3">
-                                    <div class="col">
+                                    <div class="col-3">
                                          No. of Existing Arrears:  
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="arrears" runat="server"></asp:TextBox>
                                     </div>
-                                    <div class="col"></div>
-                                    <div class="col"></div>
+                                    <div class="col-3"></div>
+                                    <div class="col-3"></div>
                                 </div>
 
                                 <div class="row py-3">
-                                    <div class="col">
+                                    <div class="col-3">
                                          History of Arrears: 
                                     </div>
-                                    <div class="col">
+                                    <div class="col-3">
                                         <asp:TextBox ID="arrearHistory" runat="server"></asp:TextBox> 
                                     </div>
-                                    <div class="col"></div>
-                                    <div class="col"></div>
+                                    <div class="col-3"></div>
+                                    <div class="col-3"></div>
+                                 </div>
                                 </div>
-                                                  </div>
-                                    </div>
+                            </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-internships" role="tabpanel" aria-labelledby="v-pills-internships-tab">. . .</div>
                         </div>
