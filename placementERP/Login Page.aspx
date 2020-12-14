@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login Page.aspx.cs" Inherits="myERP.Login_Page" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login Page.aspx.cs" Inherits="placementERP.Login_Page" %>
 
 <!DOCTYPE html>
 
@@ -13,6 +13,22 @@
     <link href="my%20style/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--Amal -->
     <title>Login</title>
+    <style type="text/css">
+        .auto-style1 {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-clip: padding-box;
+            border-radius: .25rem;
+            transition: none;
+            border: 1px solid #ced4da;
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) cmmd added. -->
@@ -37,14 +53,15 @@
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">College ID</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+                  <asp:TextBox ID="userid" CssClass="auto-style1" runat="server"></asp:TextBox>
                 <small id="emailHelp" class="form-text text-muted">Eg: 2017001</small>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                  <asp:TextBox ID="password" TextMode="Password" CssClass="form-control" runat="server"></asp:TextBox>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+                <asp:Button ID="loginBtn" runat="server" Text="Login" CssClass="btn-info" OnClick="loginBtn_Click"/>
             </form>
 
         </div>
