@@ -11,7 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="my%20style/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <!--Amal -->
+   
     <title>Login</title>
     <style type="text/css">
         .auto-style1 {
@@ -31,7 +31,7 @@
     </style>
 </head>
 <body>
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) cmmd added. -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="my%20style/plugins/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="my%20style/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
