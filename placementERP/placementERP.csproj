@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Downloads\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -83,8 +86,10 @@
     <Content Include="my style\plugins\bootstrap\js\jquery-3.5.1.slim.min.js" />
     <Content Include="Student WebForm.aspx" />
     <Content Include="Web.config" />
+    <None Include="connections.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
     <Compile Include="Login Page.aspx.cs">
       <DependentUpon>Login Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
