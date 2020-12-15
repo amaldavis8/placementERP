@@ -26,9 +26,10 @@ namespace placementERP
 
                 if (a != "null")
                 {
-                    if(a=="S")
+                    Session["New"] = userid.Text;
+                    if (a=="S")
                     {
-                        Session["New"] = userid.Text;
+                        
                         Response.Redirect("Student WebForm.aspx");
                     }
 
