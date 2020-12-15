@@ -32,12 +32,12 @@ namespace placementERP
                         Response.Redirect("Student WebForm.aspx");
                     }
 
-                    else if(a=="PO")
+                    else if(a=="P")
                     {
 
                     }
 
-                    else if(a=="SR")
+                    else if(a=="R")
                     {
 
                     }
