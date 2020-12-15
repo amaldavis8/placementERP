@@ -11,7 +11,7 @@ namespace placementERP
     public partial class Login_Page : System.Web.UI.Page
     {
         Database db;
-        bool a;
+        string a;
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Clear();
@@ -24,13 +24,26 @@ namespace placementERP
             {
                 a = db.loginCheck(userid.Text, password.Text);
 
-                if (a == true)
+                if (a != "null")
                 {
-                    Session["New"] = userid.Text;
-                    Response.Redirect("Student WebForm.aspx");
-                }
-            
+                    if(a=="S")
+                    {
+                        Session["New"] = userid.Text;
+                        Response.Redirect("Student WebForm.aspx");
+                    }
 
+                    else if(a=="PO")
+                    {
+
+                    }
+
+                    else if(a=="SR")
+                    {
+
+                    }
+                    
+                }
+                          
                 else
                 {
                     Response.Write("Invalid");

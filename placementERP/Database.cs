@@ -10,8 +10,9 @@ namespace placementERP
     public class Database
     {
         string connectionString = "datasource=182.50.133.87;port=3306;Database=edoc;username=edoc;password=edoc@cce123;";
+        string ps, type;
 
-        public bool loginCheck(string user, string pass)
+        public string loginCheck(string user, string pass)
         {
             MySqlConnection loginCon = new MySqlConnection(connectionString);
             loginCon.Open();
@@ -23,22 +24,30 @@ namespace placementERP
             if (temp == 1)
             {
                 loginCon.Open();
-                string checkpsw = "select psw from login where stud_id=" +user+";";
+                string checkpsw = "select psw,type from login where stud_id="+user+";";
                 MySqlCommand passCmd = new MySqlCommand(checkpsw, loginCon);
-                string ps = passCmd.ExecuteScalar().ToString().Replace(" ", "");
+                MySqlDataReader MyReader;
+                MyReader = passCmd.ExecuteReader();
+
+                while (MyReader.Read())
+                {
+                    ps = Convert.ToString(MyReader["psw"]);
+                    type = Convert.ToString(MyReader["type"]);
+                }
+
                 loginCon.Close();
 
                 if (ps == pass)
                 {
-                    return true;
+                    return type;
                 }
                 else
-                    return false;
+                    return "null";
 
 
             }
             else
-                return false;
+                return "null";
 
         }
         

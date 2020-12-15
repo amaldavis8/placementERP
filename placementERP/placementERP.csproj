@@ -86,7 +86,6 @@
     <Content Include="my style\plugins\bootstrap\js\jquery-3.5.1.slim.min.js" />
     <Content Include="Student WebForm.aspx" />
     <Content Include="Web.config" />
-    <None Include="connections.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
