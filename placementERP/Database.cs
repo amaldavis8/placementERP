@@ -16,7 +16,7 @@ namespace placementERP
         {
             MySqlConnection loginCon = new MySqlConnection(connectionString);
             loginCon.Open();
-            string checkuser = "select count(*) from login where stud_id=" +user+";";
+            string checkuser = "select count(*) from login where id=" + user + ";";
             MySqlCommand loginCmd = new MySqlCommand(checkuser, loginCon);
             int temp = Convert.ToInt32(loginCmd.ExecuteScalar().ToString());
             loginCon.Close();
@@ -24,7 +24,7 @@ namespace placementERP
             if (temp == 1)
             {
                 loginCon.Open();
-                string checkpsw = "select psw,type from login where stud_id="+user+";";
+                string checkpsw = "select psw,type from login where id=" + user + ";";
                 MySqlCommand passCmd = new MySqlCommand(checkpsw, loginCon);
                 MySqlDataReader MyReader;
                 MyReader = passCmd.ExecuteReader();
@@ -48,11 +48,35 @@ namespace placementERP
             }
             else
                 return "null";
-
+            
         }
-        
+
+        public string[] details(string user)
+        {
+            
            
-        
+                MySqlConnection detailsCon = new MySqlConnection(connectionString);
+                detailsCon.Open();
+                string fetch = "select cgpa,back_logs,sslc,hse,study_gap from stud_details where stud_id=" + user + ";";
+                MySqlCommand detailsCmd = new MySqlCommand(fetch, detailsCon);
+
+                MySqlDataReader MyReader2;
+                MyReader2 = detailsCmd.ExecuteReader();
+                string[] s = new string[5];
+
+                while (MyReader2.Read())
+                {
+                    s[0] = Convert.ToString(MyReader2["cgpa"]);
+                    s[1] = Convert.ToString(MyReader2["back_logs"]);
+                    s[2] = Convert.ToString(MyReader2["sslc"]);
+                    s[3] = Convert.ToString(MyReader2["hse"]);
+                    s[4] = Convert.ToString(MyReader2["study_gap"]);
+                }
+                detailsCon.Close();
+                return s;
+            
+            
+        }
 
 
 
