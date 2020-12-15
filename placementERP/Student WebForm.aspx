@@ -30,6 +30,7 @@
                     <div class="container">
                     <fieldset id="myFieldset" disabled>
                         <div class="tab-content" id="v-pills-tabContent">
+                            <!-- Profile tab begins -->
                             <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 
                                 <fieldset id="myFieldset2" disabled><div class="container-fluid">
@@ -190,10 +191,9 @@
                                    
 
 
+</div>
 
-
-
-                            </div>
+                            <!-- Academics tab begins -->
                             <div class="tab-pane fade" id="v-pills-academics" role="tabpanel" aria-labelledby="v-pills-academics-tab">
                                 <div class="card">
                                 <div class="card-body">
@@ -262,6 +262,8 @@
                                 </div>
                             </div>
                             </div>
+
+                            <!-- Internships tab begins -->
                             <div class="tab-pane fade" id="v-pills-internships" role="tabpanel" aria-labelledby="v-pills-internships-tab">. . .</div>
                         </div>
                     </fieldset>
