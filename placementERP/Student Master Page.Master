@@ -12,10 +12,10 @@
     <!-- Bootstrap CSS -->
     <link href="my%20style/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>Student</title>
+    <title>Student Login</title>
 
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
 </head>
 
 <body>
@@ -25,27 +25,30 @@
 
     <form id="form1" runat="server">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-11"></div>
-            <div class="col-1">
-                <asp:Button ID="logoutBtn" runat="server" Text="Logout" CssClass="btn-info" OnClick="logoutBtn_Click" />
+        <div class="container-fluid py-1">
+            <div class="row">
+                <div class="col-11"></div>
+                <div class="col-1">
+                    <asp:Button ID="logoutBtn" runat="server" Text="Logout" CssClass="btn-info" OnClick="logoutBtn_Click" />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row bg-info">
-            <div class="col-4">
-                <img src="images/CHRIST%20COLLEGE%20BLUE%20LOGO.jpg" class="rounded float-left img-thumbnail" />
+        <div class="container-fluid">
+            <div class="row bg-info">
+                <div class="col-4">
+                    <img src="images/CHRIST%20COLLEGE%20BLUE%20LOGO.jpg" class="rounded float-left img-thumbnail" />
+                </div>
+                <div class="col-8"></div>
             </div>
         </div>
-    </div>
 
-        <div>
-            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
-        </div>
+            <div>
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
     </form>
+
 </body>
 
 </html>
