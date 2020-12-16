@@ -9,7 +9,7 @@ namespace placementERP
 {
     public class Database
     {
-        string connectionString = "datasource=182.50.133.87;port=3306;Database=edoc;username=edoc;password=edoc@cce123;";
+        string connectionString = "datasource=182.50.133.87;port=3306;Database=edoc;username=****;password=***********;";
         string ps, type;
 
         //loginCheck() 
@@ -58,7 +58,7 @@ namespace placementERP
             
                 MySqlConnection detailsCon = new MySqlConnection(connectionString);
                 detailsCon.Open();
-                string fetch = " select cgpa,back_logs,sslc,hse,study_gap from stud_details where stud_id=" + user + "; ";
+                string fetch = "select cgpa,back_logs,sslc,hse,study_gap from stud_details where stud_id=" + user + ";";
                 MySqlCommand detailsCmd = new MySqlCommand(fetch, detailsCon);
 
                 MySqlDataReader MyReader2;
@@ -79,6 +79,25 @@ namespace placementERP
                 return s;
             
             
+        }
+
+        public bool updateDetails(string user,string cgpa,string arrears,string sslc,string hse,string study_gap)
+        {
+            string updateQuery = "Update stud_details set cgpa="+cgpa+",back_logs="+arrears+",sslc="+sslc+",hse="+hse+",study_gap="+study_gap+" where stud_id="+user+";";
+            MySqlConnection updateCon = new MySqlConnection(connectionString);
+            updateCon.Open();
+
+            MySqlCommand updateCmd = new MySqlCommand(updateQuery, updateCon);
+
+            MySqlDataReader MyReader3;
+            MyReader3 = updateCmd.ExecuteReader();
+            
+            while(MyReader3.Read())
+            {
+            }
+
+            updateCon.Close();
+            return true;
         }
 
 

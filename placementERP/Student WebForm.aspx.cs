@@ -14,25 +14,35 @@ namespace placementERP
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string user = Convert.ToString(Session["New"]);
-            db = new Database();
-            string[] s = new string[5];
+            if (!IsPostBack)
+            {
+                string user = Convert.ToString(Session["New"]);
+                db = new Database();
+                string[] s = new string[5];
 
-            //details() defined inside Database.cs file
-            s = db.details(user);
+                //details() defined inside Database.cs file
+                s = db.details(user);
 
-            cgpa.Text = s[0];
-            arrears.Text = s[1];
-            sslc.Text = s[2];
-            hse.Text = s[3];
-            studyGap.Text = s[4];
+                cgpa.Text = s[0];
+                arrears.Text = s[1];
+                sslc.Text = s[2];
+                hse.Text = s[3];
+                studyGap.Text = s[4];
 
-            double fcgpa = Convert.ToDouble(cgpa.Text);
-            double percent = (fcgpa * 10) - 3.75;
-            btechPer.Text = Convert.ToString(percent);
+                double fcgpa = Convert.ToDouble(cgpa.Text);
+                double percent = (fcgpa * 10) - 3.75;
+                btechPer.Text = Convert.ToString(percent);
+            }
 
         }
 
-        
+        protected void saveBtn_Click(object sender, EventArgs e)
+        {
+            db = new Database();
+            string user = Convert.ToString(Session["New"]);
+            db.updateDetails(user, cgpa.Text, arrears.Text, sslc.Text, hse.Text, studyGap.Text);
+
+           
+        }
     }
 }

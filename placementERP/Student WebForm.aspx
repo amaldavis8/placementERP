@@ -9,10 +9,10 @@
         <div class="row py-5">
             <div class="col-10"></div>
             <div class="col-1">
-                <button onclick="undisableField()" type="button" class="btn btn-outline-danger">Edit</button>
+                <button onclick="undisableField()" type="button" class="btn btn-outline-danger">Edit</button>                
             </div>
             <div class="col-1">
-                <button onclick="disableField()" type="button" class="btn btn-outline-success">Save</button>
+                <asp:Button ID="saveBtn" runat="server" Text="Save" CssClass="btn btn-outline-success" OnClick="saveBtn_Click" />
             </div>
         </div> 
 
