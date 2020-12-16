@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS added -->
     <link href="my%20style/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
    
     <title>Login</title>
