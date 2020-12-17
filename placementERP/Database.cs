@@ -91,6 +91,7 @@ namespace placementERP
              
         }
 
+        //updateDetails()
         public bool updateDetails(string user,string cgpa,string arrears,string sslc,string hse,string study_gap)
         {
             string updateQuery = "Update stud_details set cgpa="+cgpa+",back_logs="+arrears+",sslc="+sslc+",hse="+hse+",study_gap="+study_gap+" where stud_id="+user+";";

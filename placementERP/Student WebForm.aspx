@@ -156,6 +156,12 @@
 
                                                         <div class="row">
                                                             <div class="col">
+                                                                <hr>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col">
                                                                 <center>
                                                                     <span class="badge badge-pill badge-info">Login Credentials</span>
                                                                 </center>
@@ -170,16 +176,24 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <label>Old Password</label>
+                                                                <label>Old  </label>
                                                                 <div class="form-group">
                                                                     <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label>New Password</label>
+ 
                                                                 <div class="form-group">
                                                                     <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- password change button -->
+                                                        <div class="row">
+                                                            <div class="col-md text-center">
+                                                                <asp:Button ID="pswChange" runat="server" OnClick="pswChange_Click" Text="Change" class="btn btn-primary btn-sm" />
                                                             </div>
                                                         </div>
 
@@ -207,7 +221,7 @@
                                         <div class="row py-3">
                                             <div class="col-3">
                                                  SSLC Marks Percentage: 
-                                            </div>
+                                            iv>
                                             <div class="col-3">
                                                 <asp:TextBox ID="sslc" runat="server"></asp:TextBox>
                                             </div>
@@ -283,17 +297,14 @@
         
     </div>
 
-    <!-- Edit & Save Button's Scripts -->
+    <!-- Edit Button's Scripts -->
     <script>
+
         function undisableField() {
             document.getElementById("myFieldset").disabled = false;
             document.getElementById("myFieldset2").disabled = false;
         }
 
-        function disableField() {
-            document.getElementById("myFieldset").disabled = true;
-            document.getElementById("myFieldset2").disabled = true;
-        }
     </script>
 
 

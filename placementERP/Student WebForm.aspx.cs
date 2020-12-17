@@ -44,6 +44,7 @@ namespace placementERP
 
         }
 
+        //save button
         protected void saveBtn_Click(object sender, EventArgs e)
         {
             db = new Database();
@@ -51,6 +52,12 @@ namespace placementERP
             db.updateDetails(user, cgpa.Text, arrears.Text, sslc.Text, hse.Text, studyGap.Text);
 
            
+        }
+
+        //change button for password change
+        protected void pswChange_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
