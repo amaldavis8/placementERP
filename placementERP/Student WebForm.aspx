@@ -66,13 +66,13 @@
                                                             <div class="col-md-6">
                                                                 <label>Full Name</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Full Name"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="fullname_txt" runat="server" placeholder="Full Name"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <label>Date of Birth</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Date"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="dob_txt" runat="server" placeholder="Password" TextMode="Date"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -81,13 +81,13 @@
                                                             <div class="col-md-6">
                                                                 <label>Contact No</label>
                                                                     <div class="form-group">
-                                                                        <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Contact No" TextMode="Number"></asp:TextBox>
+                                                                        <asp:TextBox CssClass="form-control" ID="cnt_no_txt" runat="server" placeholder="Contact No" TextMode="Number"></asp:TextBox>
                                                                     </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <label>Email ID</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>
+                                                                    <asp:TextBox CssClass="form-control" ID="email_txt" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -134,13 +134,13 @@
                                                             <div class="col-md-4">
                                                                 <label>City</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox6" runat="server" placeholder="City"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="city_txt" runat="server" placeholder="City"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label>Pincode</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox7" runat="server" placeholder="Pincode" TextMode="Number"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="pin_txt" runat="server" placeholder="Pincode" TextMode="Number"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -172,13 +172,13 @@
                                                             <div class="col-md-4">
                                                                 <label>Old Password</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Email ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label>New Password</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Email ID" TextMode="Password"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                         </div>
