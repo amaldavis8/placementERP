@@ -6,6 +6,7 @@
 
     <div class="container">
 
+        <!-- Edit & Save Buttons -->
         <div class="row py-5">
             <div class="col-10"></div>
             <div class="col-1">
@@ -17,6 +18,7 @@
         </div> 
 
         <div class="row">
+
             <div class="col-3">
                 <!-- Navigation bar tabs are defined here -->
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -33,7 +35,6 @@
 
                             <!-- Profile tab begins -->
                             <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                <fieldset id="myFieldset2" disabled>
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-11">
@@ -209,91 +210,98 @@
                                                 </div>            
                                             </div>
                                         </div>
-                                    </div>
-                                </fieldset>                                   
+                                    </div>                                  
                             </div>
 
                             <!-- Academics tab begins -->
                             <div class="tab-pane fade" id="v-pills-academics" role="tabpanel" aria-labelledby="v-pills-academics-tab">
-                                <div class="card">
-                                    <div class="card-body">
+                                <div class="container-fluid">
 
-                                        <div class="row py-3">
-                                            <div class="col-3">
-                                                 SSLC Marks Percentage: 
-                                            </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="sslc" runat="server"></asp:TextBox>
-                                            </div>
-                                            <div class="col-3">
-                                                 HSE Marks Percentage: 
-                                            </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="hse" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <div class="card">
+                                                <div class="card-body">
 
-                                        <div class="row py-3">
-                                            <div class="col-3">
-                                                 Study Gap: 
-                                            </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="studyGap" runat="server"></asp:TextBox>
-                                            </div>
-                                            <div class="col-3"></div>
-                                            <div class="col-3"></div>
-                                        </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>SSLC Marks Percentage:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="sslc" runat="server"></asp:TextBox>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>HSE Marks Percentage:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="hse" runat="server"></asp:TextBox>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                        <div class="row py-3">
-                                            <div class="col-3">
-                                                 B.Tech Current CGPA: 
-                                            </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="cgpa" runat="server"></asp:TextBox>
-                                            </div>
-                                            <div class="col-3">
-                                                 B.Tech Percentage: 
-                                            </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="btechPer" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>Study Gap:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="studyGap" runat="server"></asp:TextBox>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>B.Tech Current CGPA:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="cgpa" runat="server"></asp:TextBox>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>B.Tech Percentage:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="btechPer" runat="server"></asp:TextBox>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                         
-                                        <div class="row py-3">
-                                            <div class="col-3">
-                                                 No. of Existing Arrears:  
-                                            </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="arrears" runat="server"></asp:TextBox>
-                                            </div>
-                                            <div class="col-3"></div>
-                                            <div class="col-3"></div>
-                                        </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label>No. of Existing Arrears:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="arrears" runat="server"></asp:TextBox>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>History of Arrears:</label>
+                                                            <div class="form-group">
+                                                                <asp:TextBox CssClass="form-control" ID="arrearHistory" runat="server"></asp:TextBox> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                        <div class="row py-3">
-                                            <div class="col-3">
-                                                 History of Arrears: 
+                                                </div>
                                             </div>
-                                            <div class="col-3">
-                                                <asp:TextBox ID="arrearHistory" runat="server"></asp:TextBox> 
-                                            </div>
-                                            <div class="col-3"></div>
-                                            <div class="col-3"></div>
-                                         </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
                             <!-- Internships tab begins -->
                             <div class="tab-pane fade" id="v-pills-internships" role="tabpanel" aria-labelledby="v-pills-internships-tab">
-                                <div class="card">
-                                    <div class="card-body">
-                                . . .
+                                <div class="container-fluid">
+
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    . . .
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
 
-                            </div>                                        
+                        </div>                                        
                     </fieldset>
                 </div>
             </div>
@@ -307,7 +315,6 @@
 
         function undisableField() {
             document.getElementById("myFieldset").disabled = false;
-            document.getElementById("myFieldset2").disabled = false;
         }
 
     </script>
