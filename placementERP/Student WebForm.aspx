@@ -221,7 +221,7 @@
                                         <div class="row py-3">
                                             <div class="col-3">
                                                  SSLC Marks Percentage: 
-                                            iv>
+                                            </div>
                                             <div class="col-3">
                                                 <asp:TextBox ID="sslc" runat="server"></asp:TextBox>
                                             </div>
@@ -286,9 +286,14 @@
 
                             <!-- Internships tab begins -->
                             <div class="tab-pane fade" id="v-pills-internships" role="tabpanel" aria-labelledby="v-pills-internships-tab">
+                                <div class="card">
+                                    <div class="card-body">
                                 . . .
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            </div>                                        
                     </fieldset>
                 </div>
             </div>
