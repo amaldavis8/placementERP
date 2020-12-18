@@ -112,7 +112,46 @@ namespace placementERP
             return true;
         }
 
+        //changePSW()
+        public bool changePSW(string userID, string oldPSW, string newPSW)
+        {
+            string getPSW = " SELECT psw FROM login WHERE id="+userID+"; ";
+            MySqlConnection pswCcon = new MySqlConnection(connectionString);
+            pswCcon.Open();
 
+                MySqlCommand pswCcmd = new MySqlCommand(getPSW, pswCcon);
+
+                MySqlDataReader MyReader4;
+                MyReader4 = pswCcmd.ExecuteReader();
+                while(MyReader4.Read())
+                {
+                    ps = Convert.ToString(MyReader4["psw"]);
+                }
+
+            pswCcon.Close();
+
+            if(oldPSW == ps)
+            {
+                string changePSW = " UPDATE login SET psw ="+newPSW+" where id="+userID+"; ";
+                MySqlConnection changePSWCON = new MySqlConnection(connectionString);
+                changePSWCON.Open();
+
+                MySqlCommand changePSWcmd = new MySqlCommand(changePSW, changePSWCON);
+
+                    MySqlDataReader MyReader5;
+                    MyReader5 = changePSWcmd.ExecuteReader();
+                    while (MyReader5.Read())
+                    {
+                    }
+
+                changePSWCON.Close();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }

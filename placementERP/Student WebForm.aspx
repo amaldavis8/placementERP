@@ -173,20 +173,19 @@
                                                             <div class="col-md-4">
                                                                 <label>User ID</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="userID" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
-                                                                <label>Old  </label>
+                                                                <label>Old Password</label>
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="oldPSW" runat="server" placeholder="Old Password" TextMode="Password"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <label>New Password</label>
- 
                                                                 <div class="form-group">
-                                                                    <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
+                                                                    <asp:TextBox class="form-control" ID="newPSW" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -194,7 +193,7 @@
                                                         <!-- password change button -->
                                                         <div class="row">
                                                             <div class="col-md text-center">
-                                                                <asp:Button ID="pswChange" runat="server" OnClick="pswChange_Click" Text="Change" class="btn btn-primary btn-sm" />
+                                                                <asp:Button ID="changePSW" runat="server" OnClick="changePSW_Click" Text="Change" class="btn btn-primary btn-sm" />
                                                             </div>
                                                         </div>
 
