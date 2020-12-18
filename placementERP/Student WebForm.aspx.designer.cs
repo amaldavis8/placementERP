@@ -121,6 +121,15 @@ namespace placementERP {
         protected global::System.Web.UI.WebControls.TextBox TextBox10;
         
         /// <summary>
+        /// pswChange control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button pswChange;
+        
+        /// <summary>
         /// sslc control.
         /// </summary>
         /// <remarks>

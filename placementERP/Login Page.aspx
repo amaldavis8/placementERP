@@ -37,7 +37,7 @@
 
     <form id="form1" runat="server">
 
-        <div class="container-fluid py-1">
+        <div class="container-fluid">
             <div class="row bg-info">
                 <div class="col-4">
                     <img src="images/CHRIST%20COLLEGE%20BLUE%20LOGO.jpg" class="rounded float-left img-thumbnail" />
