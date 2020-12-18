@@ -85,13 +85,13 @@ namespace placementERP {
         protected global::System.Web.UI.WebControls.TextBox pin_txt;
         
         /// <summary>
-        /// TextBox5 control.
+        /// address_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox address_txt;
         
         /// <summary>
         /// TextBox8 control.

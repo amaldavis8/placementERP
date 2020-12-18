@@ -37,6 +37,7 @@ namespace placementERP
                 cnt_no_txt.Text = s[9];
                 DropDownList1.SelectedValue = s[10];
                 city_txt.Text = s[11];
+                address_txt.Text = s[12];
                 double fcgpa = Convert.ToDouble(cgpa.Text);
                 double percent = (fcgpa * 10) - 3.75;
                 btechPer.Text = Convert.ToString(percent);

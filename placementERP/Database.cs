@@ -58,11 +58,11 @@ namespace placementERP
             
                 MySqlConnection detailsCon = new MySqlConnection(connectionString);
                 detailsCon.Open();
-                string fetch = "select cgpa,back_logs,sslc,hse,study_gap,fir_name,sec_name,las_name,cnt_no,eml_id,pin,dob,state,city from stud_details where stud_id=" + user + ";";
+                string fetch = "select cgpa,back_logs,sslc,hse,study_gap,fir_name,sec_name,las_name,cnt_no,eml_id,pin,dob,state,city,hou_name from stud_details where stud_id=" + user + ";";
                 MySqlCommand detailsCmd = new MySqlCommand(fetch, detailsCon);
                 MySqlDataReader MyReader2;
                 MyReader2 = detailsCmd.ExecuteReader();
-                string[] s = new string[12];
+                string[] s = new string[13];
             while (MyReader2.Read())
                 {
                     s[0] = Convert.ToString(MyReader2["cgpa"]);
@@ -85,6 +85,7 @@ namespace placementERP
                     s[9] = Convert.ToString(MyReader2["cnt_no"]);
                     s[10] = Convert.ToString(MyReader2["state"]);
                     s[11] = Convert.ToString(MyReader2["city"]);
+                    s[12] = Convert.ToString(MyReader2["hou_name"]) + ", " + s[11] + ", " + s[10]+", "+s[7]; ;
             }
             detailsCon.Close();
             return s;
