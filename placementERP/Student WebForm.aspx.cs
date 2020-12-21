@@ -57,8 +57,11 @@ namespace placementERP
             db = new Database();
             string user = Convert.ToString(Session["New"]);
             db.updateDetails(user, cgpa.Text, arrears.Text, sslc.Text, hse.Text, studyGap.Text);
+            double fcgpa = Convert.ToDouble(cgpa.Text);
+            double percent = (fcgpa * 10) - 3.75;
+            btechPer.Text = Convert.ToString(percent);
 
-           
+
         }
 
         //change button for password change
