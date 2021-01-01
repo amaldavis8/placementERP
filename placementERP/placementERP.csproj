@@ -84,6 +84,7 @@
     <Content Include="my style\plugins\bootstrap\js\bootstrap.js" />
     <Content Include="my style\plugins\bootstrap\js\bootstrap.min.js" />
     <Content Include="my style\plugins\bootstrap\js\jquery-3.5.1.slim.min.js" />
+    <Content Include="PO Web Form.aspx" />
     <Content Include="Student WebForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -96,7 +97,22 @@
     <Compile Include="Login Page.aspx.designer.cs">
       <DependentUpon>Login Page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PO Web Form.aspx.cs">
+      <DependentUpon>PO Web Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PO Web Form.aspx.designer.cs">
+      <DependentUpon>PO Web Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PODatabse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PO Master Page.Master.cs">
+      <DependentUpon>PO Master Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PO Master Page.Master.designer.cs">
+      <DependentUpon>PO Master Page.Master</DependentUpon>
+    </Compile>
     <Compile Include="Student Master Page.Master.cs">
       <DependentUpon>Student Master Page.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,6 +141,7 @@
     <Content Include="my style\plugins\bootstrap\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Student Master Page.Master" />
+    <Content Include="PO Master Page.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
