@@ -52,6 +52,32 @@ namespace placementERP
             
         }
 
+        public void checkUser(string user)
+        {
+            MySqlConnection checkCon = new MySqlConnection(connectionString);
+            checkCon.Open();
+            string check = "Select count(*) from stud_details where stud_id=" + user + ";";
+            MySqlCommand checkCmd = new MySqlCommand(check, checkCon);
+            int temp = Convert.ToInt32(checkCmd.ExecuteScalar().ToString());
+            checkCon.Close();
+
+            if(temp==0)
+            {
+                checkCon.Open();
+                string adduser = "Insert into stud_details (stud_id) values(" + user + ");";
+                MySqlCommand addCmd = new MySqlCommand(adduser, checkCon);
+
+                MySqlDataReader MyReader6;
+                MyReader6 = addCmd.ExecuteReader();
+
+                while (MyReader6.Read())
+                {
+                }
+            }
+        }
+        
+        
+        
         //details()
         public string[] details(string user)
         {

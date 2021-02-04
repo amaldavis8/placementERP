@@ -39,7 +39,7 @@ namespace placementERP
                     }
                     else if(a=="P")
                     {
-
+                        Response.Redirect("PO Web Form.aspx");
                     }
                     else if(a=="R")
                     {
