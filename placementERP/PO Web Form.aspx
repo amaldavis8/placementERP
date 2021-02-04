@@ -60,7 +60,27 @@
                         </div>
                     </div>
 
+                    
+
                 </div>
+
+                 <div class="row">
+
+                     <div class="col-md-5">
+                         </div>
+                     <div class="col-md-2">
+
+                         <asp:Button ID="submitBtn" runat="server" Text="Submit" OnClick="submitBtn_Click" />
+
+                         </div>
+
+                 </div>
+
+                 <div class="row">
+
+                     <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+
+                 </div>
 
              </div>
          </div>
