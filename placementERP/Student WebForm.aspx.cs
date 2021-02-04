@@ -21,6 +21,7 @@ namespace placementERP
             {
                 string user = Convert.ToString(Session["New"]);
                 db = new Database();
+                db.checkUser(user);
                 string[] s = new string[13];
                
 
