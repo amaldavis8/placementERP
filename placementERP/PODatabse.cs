@@ -11,7 +11,7 @@ namespace placementERP
     {
         string connectionString = "datasource=182.50.133.87;port=3306;Database=edoc;username=edoc;password=edoc@cce123;convert zero datetime=True";
 
-        
+        //Filtering student list
         public DataTable showGridview(string dept,string cgpa,string tenth,string hs,string arrearNo,string arrearHistory)
         {
             DataTable dt=new DataTable();
@@ -55,6 +55,25 @@ namespace placementERP
 
 
 
+        }
+
+        public bool addDrive(string cmpname, string year, string session, string levels)
+        {
+            string insertQuery = "Insert into placement(company_name,year,session,levels) values('"+cmpname+"',"+year+",'"+session+"',"+levels+");";
+            MySqlConnection addCon = new MySqlConnection(connectionString);
+            addCon.Open();
+
+            MySqlCommand addCmd = new MySqlCommand(insertQuery, addCon);
+
+            MySqlDataReader MyReader20;
+            MyReader20 = addCmd.ExecuteReader();
+
+            while (MyReader20.Read())
+            {
+            }
+
+            addCon.Close();
+            return true;
         }
 
 
