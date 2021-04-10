@@ -7,6 +7,8 @@
      <div class="container-fluid">
          <div class="row">
              <div class="col-lg-11">
+                
+                 <br />
 
                 <div class="row">
                     <div class="col-md-3">
@@ -19,7 +21,14 @@
                     <div class="col-md-3">
                         <label>Dept.</label>
                         <div class="form-group">
-                            <asp:TextBox CssClass="form-control" ID="dept_txt" runat="server"></asp:TextBox>
+                            <asp:DropDownList class="form-control" ID="dept_drop" runat="server">
+                                <asp:ListItem Text="CE" Value="CE" />
+                                <asp:ListItem Text="CS" Value="CS" />
+                                <asp:ListItem Text="EC" Value="EC" />
+                                <asp:ListItem Text="EE" Value="EE" />
+                                <asp:ListItem Text="ME" Value="ME" />
+
+                            </asp:DropDownList>
                         </div>
                     </div>
 
@@ -37,8 +46,11 @@
                         </div>
                     </div>
                 </div>
+                 
 
-                <div class="row">
+
+
+                 <div class="row">
                     <div class="col-md-3">
                         <label>12th</label>
                         <div class="form-group">
@@ -56,14 +68,28 @@
                     <div class="col-md-3">
                         <label>History of arrears</label>
                         <div class="form-group">
-                            <asp:TextBox CssClass="form-control" ID="arrearHistory_txt" runat="server"></asp:TextBox>
+                            <asp:DropDownList class="form-control" ID="arrearHistory_drop" runat="server">
+                                <asp:ListItem Text="Yes" Value="yes" />
+                                <asp:ListItem Text="No" Value="no" />
+                            </asp:DropDownList>
                         </div>
                     </div>
 
                     
 
                 </div>
+                 <br />
 
+                 
+                 <div class="row">
+
+                    <asp:DropDownList class="form-control" ID="drive_drop" runat="server">
+                            </asp:DropDownList>
+
+                    </div>
+
+
+                 <br />
                  <div class="row">
 
                      <div class="col-md-5">
@@ -75,7 +101,7 @@
                          </div>
 
                  </div>
-
+                 <br />
                  <div class="row">
 
                      <asp:GridView ID="GridView1" runat="server"></asp:GridView>
