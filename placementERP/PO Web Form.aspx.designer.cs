@@ -22,13 +22,13 @@ namespace placementERP {
         protected global::System.Web.UI.WebControls.TextBox year_txt;
         
         /// <summary>
-        /// dept_txt control.
+        /// dept_drop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dept_txt;
+        protected global::System.Web.UI.WebControls.DropDownList dept_drop;
         
         /// <summary>
         /// cgpa_txt control.
@@ -67,13 +67,22 @@ namespace placementERP {
         protected global::System.Web.UI.WebControls.TextBox arrearNo_txt;
         
         /// <summary>
-        /// arrearHistory_txt control.
+        /// arrearHistory_drop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox arrearHistory_txt;
+        protected global::System.Web.UI.WebControls.DropDownList arrearHistory_drop;
+        
+        /// <summary>
+        /// drive_drop control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drive_drop;
         
         /// <summary>
         /// submitBtn control.

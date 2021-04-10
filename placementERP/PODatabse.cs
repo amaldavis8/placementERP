@@ -76,6 +76,22 @@ namespace placementERP
             return true;
         }
 
+        public DataSet driveDropdown()
+        {
+            string dropQuery = "Select * from placement;";
+            MySqlConnection dropCon = new MySqlConnection(connectionString);
+            dropCon.Open();
+            MySqlCommand driveCmd = new MySqlCommand(dropQuery, dropCon);
+            MySqlDataAdapter dropAdapter = new MySqlDataAdapter();
+            DataSet ds = new DataSet();
+            dropAdapter.SelectCommand = driveCmd;
+            dropAdapter.Fill(ds);
+            dropCon.Close();
+    
+            return ds;
+
+        }
+
 
     }
 }
