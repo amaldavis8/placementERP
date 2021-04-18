@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//comment by simon 18.04.2021
+
 namespace placementERP
 {
     public partial class Student_WebForm : System.Web.UI.Page
